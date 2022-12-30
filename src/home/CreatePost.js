@@ -25,7 +25,7 @@ const CreatePost = () => {
             image: imgData.data.url
             }
 
-            fetch("http://localhost:5000/allmedias", {
+            fetch("https://hashbook-server.vercel.app/allmedias", {
                 
                     method: 'POST',
                     headers: {

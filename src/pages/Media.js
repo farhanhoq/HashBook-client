@@ -6,7 +6,7 @@ const Media = () => {
     const { data: allmedias, isLoading} = useQuery({
         queryKey: ['media'],
         queryFn: async () => {
-            const res = await fetch("http://localhost:5000/allmedias");
+            const res = await fetch("https://hashbook-server.vercel.app/allmedias");
             const data = await res.json();
             return data;
         }
